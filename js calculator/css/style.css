@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --clr-neon:hsl(317 100% 54%);
+    --gradient: linear-gradient(
+        45deg,
+        #341c5c,
+        #721f59,
+        #a01c3b,
+        #a04929,
+        #8b8b09
+    );
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:var(--gradient);
+    background-attachment: fixed;
+    background-size: 400%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: left;
+    animation: bg-animation 5s infinite alternate;
+}
+@keyframes bg-animation{
+    0%{background-position: left;}
+    100%{background-position: right;}
+}
+#calculator{
+ background-color: hsl(0, 0%, 15%);
+ display: flex;
+ flex-wrap: wrap;
+ max-width: 500px;
+ margin-top: 80px;
+ border-radius: 20px;
+}
+#keys{
+    margin-left: 15px;
+}
+button{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 7px;
+    background-color: hsl(0, 0%, 30%);
+    color: white;
+    font-size: 40px;
+    border: 0px;
+    font-weight: bold;
+}
+.func{
+    background-color: hsl(41, 80%, 50%);
+}
+input{
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 20%);
+    border: 0px;
+    border-top-left-radius: 20px;
+    color: white;
+    border-top-right-radius: 20px;
+    font-size: 5rem;
+    padding-left: 15px;
+}
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+}
+.func:hover{
+    background-color: hsl(41, 90%, 50%);
+}
+.func:active{
+    background-color: hsl(41, 100%, 50%);
+}
