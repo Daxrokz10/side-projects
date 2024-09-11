@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 300vh;
+    background-image: url(../assets/images/bg-img-actual.png);
+    background-attachment: fixed;
+    backdrop-filter: blur(5px);
+}
+.nav-logo{
+    height: 25px;
+}
+.gc-pc{
+    margin-top: 80px;
+    background-image: url(../assets/images/pc-photo.webp);
+    height: 80vh;
+    background-size:contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    color: white;
+    
+}
+.gc-pc-text{
+    display: flex;
+    flex-direction: column;
+}
+.gc-pc h1{
+    margin-top: 200px;
+    font-size: 60px;
+    max-width: 450px;
+    font-weight: 900;
+}
+.gc-pc p{
+    font-size: 20px;
+    max-width: 450px;
+}
+.my-6{
+    margin-top: 20%;
+    margin-left: 25%;
+}
