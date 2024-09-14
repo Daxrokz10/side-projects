@@ -12,6 +12,9 @@ body{
 .nav-logo{
     height: 25px;
 }
+.navbar a:hover{
+    text-decoration: underline;
+}
 .gc-pc{
     margin-top: 80px;
     background-image: url(../assets/images/pc-photo.webp);
