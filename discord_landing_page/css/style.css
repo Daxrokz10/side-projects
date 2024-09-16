@@ -61,7 +61,7 @@ body{
     border-radius: 60px;
     border: 5px solid #6a72c8;
 }
-.video-box .video-player video{
+.video-player video{
     height: 630px;
     margin-top: 7px;
     margin-left: 5px;
@@ -78,4 +78,16 @@ body{
 .video-text p{
     margin-top: 20px;
     max-width: 400px;
+}
+.video-2{
+    padding-bottom: 300px;
+}
+.video-box-3{
+    height: 650px;
+    width: 1300px;
+    background-color: #375bd5;
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    border-radius: 60px;
+    border: 5px solid #6a72c8;
 }
