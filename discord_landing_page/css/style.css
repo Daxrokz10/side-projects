@@ -9,12 +9,18 @@ body{
     background-attachment: fixed;
     backdrop-filter: blur(5px);
 }
+
+/* NAVBAR */
+
 .nav-logo{
     height: 25px;
 }
 .navbar a:hover{
     text-decoration: underline;
 }
+
+/* GC-PC */
+
 .gc-pc{
     margin-top: 80px;
     background-image: url(../assets/images/pc-photo.webp);
@@ -91,36 +97,42 @@ body{
     border-radius: 60px;
     border: 5px solid #6a72c8;
 }
-.marquee {
-    margin: 0;
-    overflow: hidden;
+
+
+/* RIBBON  */
+
+.ribbon{
+    padding: 300px 0;
+}
+.scrolling-ribbon {
     display: flex;
-    justify-content: center;
+    overflow: hidden;
+    background: linear-gradient(90deg, #3f5efb, #7faaff);
+    padding: 15px 0;
+    white-space: nowrap;
+}
+
+.scrolling-ribbon span {
+    display: flex;
     align-items: center;
-    height: 100vh;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin: 0 30px;
+    font-family: 'antique_olive_stdcompact';
 }
 
-.animated-image {
-    position: absolute;
-    animation: scroll 10s linear infinite;
-    width: 100vw;
+.scrolling-ribbon img {
+    height: 40px;
+    margin: 0 10px;
 }
 
-.image1 {
-    animation-delay: 0s;
-}
-
-.image2 {
-    animation-delay: 5s; /* Delay for second image to follow */
-}
 @keyframes scroll {
-    0% {
-        transform: translateX(-50vw); /* Start off-screen to the left */
-    }
-    50% {
-        transform: translateX(0); /* In the center */
-    }
-    100% {
-        transform: translateX(50vw); /* Off-screen to the right */
-    }
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.scrolling-content {
+    display: flex;
+    animation: scroll 100s linear infinite;
 }
