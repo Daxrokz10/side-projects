@@ -91,3 +91,36 @@ body{
     border-radius: 60px;
     border: 5px solid #6a72c8;
 }
+.marquee {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.animated-image {
+    position: absolute;
+    animation: scroll 10s linear infinite;
+    width: 100vw;
+}
+
+.image1 {
+    animation-delay: 0s;
+}
+
+.image2 {
+    animation-delay: 5s; /* Delay for second image to follow */
+}
+@keyframes scroll {
+    0% {
+        transform: translateX(-50vw); /* Start off-screen to the left */
+    }
+    50% {
+        transform: translateX(0); /* In the center */
+    }
+    100% {
+        transform: translateX(50vw); /* Off-screen to the right */
+    }
+}
