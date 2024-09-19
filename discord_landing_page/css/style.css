@@ -51,26 +51,24 @@ body{
 
 /* VIDEO */
 
-.video-1{
-    padding: 300px 0px;
-}
-.video-1 img{
-    margin-left: 950px;
-    height: 100px;
-}
 .video-box{
     height: 650px;
     width: 1300px;
-    background-color: rgb(87, 107, 238);
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
     border-radius: 60px;
     border: 5px solid #6a72c8;
 }
-.video-player video{
-    height: 630px;
-    margin-top: 7px;
-    margin-left: 5px;
+.video-player-type1 video{
+    height: 615px;
+    margin-top: 13px;
+    margin-left: 13px;
+    border-radius: 60px;
+}
+.video-player-type2 video{
+    height: 615px;
+    margin-top: 13px;
+    margin-right: 13px;
     border-radius: 60px;
 }
 .video-text{
@@ -85,9 +83,26 @@ body{
     margin-top: 20px;
     max-width: 400px;
 }
+
+.video-1 .video-box{
+    background-color: rgb(87, 107, 238);
+}
+.video-1{
+    padding: 300px 0px;
+}
+.video-1 img{
+    margin-left: 950px;
+    height: 100px;
+}
+
+.video-2 .video-box{
+    background-image: linear-gradient(45deg,#7874b2,rgb(65, 119, 230,0.2));
+}
 .video-2{
     padding-bottom: 300px;
 }
+
+
 .video-box-3{
     height: 650px;
     width: 1300px;
@@ -98,6 +113,15 @@ body{
     border: 5px solid #6a72c8;
 }
 
+
+.video-5{
+    padding-top: 300px;
+}
+
+
+.video-6{
+    padding-top: 300px;
+}
 
 /* RIBBON  */
 
