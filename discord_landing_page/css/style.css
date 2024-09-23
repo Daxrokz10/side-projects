@@ -95,7 +95,7 @@ body{
     height: 100px;
 }
 
-.video-2 .video-box{
+.video-2 .video-box , .video-4 .video-box , .video-5 .video-box , .video-6 .video-box{
     background-image: linear-gradient(45deg,#7874b2,rgb(65, 119, 230,0.2));
 }
 .video-2{
@@ -108,7 +108,7 @@ body{
     width: 1300px;
     background-color: #375bd5;
     -webkit-backdrop-filter: blur(5px);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     border-radius: 60px;
     border: 5px solid #6a72c8;
 }
@@ -159,4 +159,34 @@ body{
 .scrolling-content {
     display: flex;
     animation: scroll 100s linear infinite;
+}
+
+
+/* NOSCROLL */
+
+.noscroll h2{
+    font-family: 'antique_olive_stdcompact';
+    padding: 200px 0px 30px 0px;
+    font-size: 40px;
+    font-weight: 900;
+}
+.noscroll button{
+    margin-left: 38%;
+}
+.noscroll{
+    padding-bottom: 400px;
+}
+
+/* FOOTERPRE */
+
+.footerpre img{
+    margin-left: 16%;
+}
+
+
+/* FOOTER */
+
+footer{
+    padding: 400px 0px;
+    background-image: linear-gradient(45deg,#86abe2,#313a8d);
 }
