@@ -44,13 +44,14 @@ body{
     font-size: 20px;
     max-width: 450px;
 }
+/* responsive-work */
 .my-6{
     margin-top: 20%;
     margin-left: 25%;
 }
 
 /* VIDEO */
-
+/* responsive-work */
 .video-box{
     height: 650px;
     width: 1300px;
@@ -170,6 +171,7 @@ body{
     font-size: 40px;
     font-weight: 900;
 }
+/* responsive-work */
 .noscroll button{
     margin-left: 38%;
 }
@@ -179,14 +181,18 @@ body{
 
 /* FOOTERPRE */
 
+/* needs to be responsive */
 .footerpre img{
-    margin-left: 16%;
+    margin-left: 16%; 
 }
 
 
 /* FOOTER */
 
 footer{
-    padding: 400px 0px;
+    padding: 40px 0px 200px 0px;
     background-image: linear-gradient(45deg,#86abe2,#313a8d);
+}
+footer .col-language{
+    padding-right: 200px;
 }
