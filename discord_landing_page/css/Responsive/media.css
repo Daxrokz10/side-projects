@@ -1,0 +1,27 @@
+@media(max-width:1920px){
+    
+}
+@media(max-width:1399px){
+     /* VIDEO BOX */
+
+     .video-box,.video-box-3{
+        height: 650px;
+        width: 1270px;
+        margin-left: -80px;
+    }
+}
+@media(max-width:1200px){
+   
+}
+@media(max-width:991px){
+
+}
+@media(max-width:768px){
+
+}
+@media(max-width:576px){
+
+}
+@media(max-width:410px){
+
+}
