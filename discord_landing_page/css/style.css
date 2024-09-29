@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body{
-    height: 300vh;
+    
     background-image: url(../assets/images/bg-img-actual.png);
     background-attachment: fixed;
     backdrop-filter: blur(5px);
@@ -84,6 +84,7 @@ body{
 .video-text p{
     margin-top: 20px;
     max-width: 400px;
+    font-size: 1.5rem;
 }
 
 .video-1 .video-box{

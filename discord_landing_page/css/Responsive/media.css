@@ -94,6 +94,77 @@
 /* MD */
 
 @media(max-width:991px){
+    /* BACKGROUND */
+    body{
+        background-attachment:scroll;
+    }
+    
+    /* GCPC */
+    .gc-pc img{
+        height: 400px;
+        margin-left: 80px;
+    }
+    .gc-pc{
+        background-image: url(#);
+    }
+    .gc-pc h1{
+        margin-top: 50px;
+        font-size: 40px;
+        text-align: center;
+        font-weight: 900;
+        max-width: 1100px;
+    }
+    .gc-pc p{
+        font-size: 18px;
+        font-weight: 300;
+        text-align: center;
+        max-width: 950px;
+    }
+    .my-6{
+        margin-top: 10%;
+        margin-left: 5%;
+    }
+
+        /* VIDEO BOX */
+
+        .video-box,.video-box-3{
+            height: 440px;
+            width: 720px;
+            margin-left: 0px;
+            
+        }
+        .video-player-type1 video{
+            height: 300px;
+            width: 500px;
+            margin-left: -30px;
+            margin-top: 60px;
+            
+        }
+        .video-player-type2 video{
+            height: 300px;
+            width: 500px;
+        }
+        .video-text{
+            margin-top: 10%;
+            padding-left: 0px;
+        }
+        .video-text h2{
+            font-weight: 800;
+            font-size: 1.6rem;
+            font-family: 'antique_olive_stdcompact';
+        }
+        .video-text p{
+            margin-top: -10px;
+            font-size: 16px;
+        }
+        .video-1{
+            padding: 300px 0px;
+        }
+        .video-1 img{
+            margin-left: 700px;
+            height: 70px;
+        }
+    
 
 }
 
