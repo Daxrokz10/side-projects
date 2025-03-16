@@ -5,39 +5,71 @@
 
 using namespace std;
 
-int main() {
-    unordered_map<string, string> passwordStorage;
-    string service, password;
+void printMenu() {
+    cout << "1. Add a new password" << endl;
+    cout << "2. Retrieve a password" << endl;
+    cout << "3. Exit" << endl;
+}
 
-    cout << "Enter the service name (e.g., Gmail, Facebook): ";
-    cin >> service;
+void addPass() {
+    string website, username, password;
+    cout << "Enter website: ";
+    cin >> website;
+    cout << "Enter username: ";
+    cin >> username;
+    cout << "Enter password: ";
 
-    cout << "Enter the password: ";
     char ch;
-    while ((ch = _getch()) != '\r') { // Read characters until Enter is pressed
-        if (ch == '\b' && !password.empty()) { 
-            // Handle backspace
-            cout << "\b \b";  // Erase last '*'
+    while((ch = _getch()) != '\r'){
+        if(ch == '\b'){
+            cout<<"\b \b";
             password.pop_back();
-        } else if (ch != '\b') {
+        }else if(ch != '\b'){
             password.push_back(ch);
-            cout << '*';  // Print '*' instead of the actual character
+            cout<<"*";
         }
     }
     cout << endl;
 
-    // Store in map
-    passwordStorage[service] = password;
+    ofstream file("passwords.txt", ios::app);
+    file << website << " " << username << " " << password << endl;
+    file.close();
+}
 
-    // Write to file
-    ofstream outFile("passwords.txt", ios::app);
-    if (outFile) {
-        outFile << service << " " << password << endl;
-        cout << "Password saved successfully!" << endl;
-    } else {
-        cout << "Error saving password!" << endl;
+
+void retrievePass(){
+    string website;
+    cout<<"Enter website: ";
+    cin>>website;
+    ifstream file("passwords.txt");
+    string line;
+    while(getline(file,line)){
+        if(line.find(website)!=string::npos){
+            cout<<line<<endl;
+            return;
+        }
     }
-    outFile.close();
+    cout<<"Password not found"<<endl;
+}
 
+int main() {
+    int choice;
+
+    printMenu();
+    cout<<"Enter your choice --> ";
+    cin >> choice;
+
+    switch (choice) {
+        case 1:
+            addPass();
+            break;
+        case 2:
+            retrievePass();
+            break;
+        case 3:
+            return 0;
+        default:
+            cout << "Invalid choice" << endl;
+    }
     return 0;
 }
